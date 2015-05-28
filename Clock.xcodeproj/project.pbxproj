@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		711E79B41AB222310008F6A7 /* WatchFaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711E79B31AB222310008F6A7 /* WatchFaceView.swift */; };
+		711E79B61AB2278C0008F6A7 /* TopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711E79B51AB2278C0008F6A7 /* TopView.swift */; };
+		711E79B81AB228F50008F6A7 /* HandsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 711E79B71AB228F50008F6A7 /* HandsView.swift */; };
+		7128127A1ABB53950003F8D1 /* ClockView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 712812791ABB53950003F8D1 /* ClockView.swift */; };
 		71E0D6931AA25A210055C0DF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E0D6921AA25A210055C0DF /* AppDelegate.swift */; };
-		71E0D6951AA25A210055C0DF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E0D6941AA25A210055C0DF /* ViewController.swift */; };
+		71E0D6951AA25A210055C0DF /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 71E0D6941AA25A210055C0DF /* ClockViewController.swift */; };
 		71E0D6981AA25A210055C0DF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71E0D6961AA25A210055C0DF /* Main.storyboard */; };
 		71E0D69A1AA25A210055C0DF /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 71E0D6991AA25A210055C0DF /* Images.xcassets */; };
 		71E0D69D1AA25A210055C0DF /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 71E0D69B1AA25A210055C0DF /* LaunchScreen.xib */; };
@@ -26,10 +30,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		711E79B31AB222310008F6A7 /* WatchFaceView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WatchFaceView.swift; sourceTree = "<group>"; };
+		711E79B51AB2278C0008F6A7 /* TopView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopView.swift; sourceTree = "<group>"; };
+		711E79B71AB228F50008F6A7 /* HandsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HandsView.swift; sourceTree = "<group>"; };
+		712812791ABB53950003F8D1 /* ClockView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClockView.swift; sourceTree = "<group>"; };
 		71E0D68D1AA25A210055C0DF /* Clock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Clock.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71E0D6911AA25A210055C0DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		71E0D6921AA25A210055C0DF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		71E0D6941AA25A210055C0DF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		71E0D6941AA25A210055C0DF /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		71E0D6971AA25A210055C0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		71E0D6991AA25A210055C0DF /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		71E0D69C1AA25A210055C0DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -77,11 +85,12 @@
 		71E0D68F1AA25A210055C0DF /* Clock */ = {
 			isa = PBXGroup;
 			children = (
-				71E0D6921AA25A210055C0DF /* AppDelegate.swift */,
-				71E0D6941AA25A210055C0DF /* ViewController.swift */,
 				71E0D6961AA25A210055C0DF /* Main.storyboard */,
-				71E0D6991AA25A210055C0DF /* Images.xcassets */,
-				71E0D69B1AA25A210055C0DF /* LaunchScreen.xib */,
+				71E0D6941AA25A210055C0DF /* ClockViewController.swift */,
+				712812791ABB53950003F8D1 /* ClockView.swift */,
+				711E79B31AB222310008F6A7 /* WatchFaceView.swift */,
+				711E79B71AB228F50008F6A7 /* HandsView.swift */,
+				711E79B51AB2278C0008F6A7 /* TopView.swift */,
 				71E0D6901AA25A210055C0DF /* Supporting Files */,
 			);
 			path = Clock;
@@ -90,6 +99,9 @@
 		71E0D6901AA25A210055C0DF /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				71E0D69B1AA25A210055C0DF /* LaunchScreen.xib */,
+				71E0D6921AA25A210055C0DF /* AppDelegate.swift */,
+				71E0D6991AA25A210055C0DF /* Images.xcassets */,
 				71E0D6911AA25A210055C0DF /* Info.plist */,
 			);
 			name = "Supporting Files";
@@ -161,6 +173,7 @@
 				TargetAttributes = {
 					71E0D68C1AA25A210055C0DF = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = U66NJY4N2H;
 					};
 					71E0D6A11AA25A210055C0DF = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -212,8 +225,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				71E0D6951AA25A210055C0DF /* ViewController.swift in Sources */,
+				71E0D6951AA25A210055C0DF /* ClockViewController.swift in Sources */,
+				7128127A1ABB53950003F8D1 /* ClockView.swift in Sources */,
+				711E79B61AB2278C0008F6A7 /* TopView.swift in Sources */,
 				71E0D6931AA25A210055C0DF /* AppDelegate.swift in Sources */,
+				711E79B41AB222310008F6A7 /* WatchFaceView.swift in Sources */,
+				711E79B81AB228F50008F6A7 /* HandsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,9 +355,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Clock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -348,9 +368,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = Clock/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -407,6 +430,7 @@
 				71E0D6AE1AA25A210055C0DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71E0D6AF1AA25A210055C0DF /* Build configuration list for PBXNativeTarget "ClockTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +439,7 @@
 				71E0D6B11AA25A210055C0DF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

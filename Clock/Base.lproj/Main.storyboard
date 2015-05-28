@@ -1,25 +1,72 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Clock View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ClockViewController" customModule="Clock" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                    <view key="view" contentMode="redraw" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EgY-Wi-o5g" customClass="ClockView" customModule="Clock" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <subviews>
+                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="gfO-OK-b3M" customClass="WatchFaceView" customModule="Clock">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="Oh3-iU-ik7" customClass="HandsView" customModule="Clock">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="dPa-uU-lBp" customClass="TopView" customModule="Clock">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="gfO-OK-b3M" secondAttribute="trailing" id="Fl7-Tg-xq1"/>
+                                    <constraint firstItem="gfO-OK-b3M" firstAttribute="leading" secondItem="EgY-Wi-o5g" secondAttribute="leading" id="He2-uO-t0B"/>
+                                    <constraint firstItem="gfO-OK-b3M" firstAttribute="bottom" secondItem="Oh3-iU-ik7" secondAttribute="bottom" id="Jsp-bB-Ut5"/>
+                                    <constraint firstItem="gfO-OK-b3M" firstAttribute="trailing" secondItem="Oh3-iU-ik7" secondAttribute="trailing" id="L3U-ki-l22"/>
+                                    <constraint firstItem="gfO-OK-b3M" firstAttribute="top" secondItem="EgY-Wi-o5g" secondAttribute="top" id="Lc1-9s-exH"/>
+                                    <constraint firstItem="dPa-uU-lBp" firstAttribute="leading" secondItem="Oh3-iU-ik7" secondAttribute="leading" id="Nra-rN-eNa"/>
+                                    <constraint firstItem="dPa-uU-lBp" firstAttribute="leading" secondItem="gfO-OK-b3M" secondAttribute="leading" id="O4T-Jg-Jbt"/>
+                                    <constraint firstItem="gfO-OK-b3M" firstAttribute="bottom" secondItem="dPa-uU-lBp" secondAttribute="bottom" id="XBt-n4-eFM"/>
+                                    <constraint firstItem="Oh3-iU-ik7" firstAttribute="top" secondItem="dPa-uU-lBp" secondAttribute="top" id="cTg-MA-UjQ"/>
+                                    <constraint firstItem="gfO-OK-b3M" firstAttribute="trailing" secondItem="dPa-uU-lBp" secondAttribute="trailing" id="pc4-MC-qnz"/>
+                                    <constraint firstItem="Oh3-iU-ik7" firstAttribute="top" secondItem="gfO-OK-b3M" secondAttribute="top" id="uZg-81-zqs"/>
+                                    <constraint firstAttribute="bottom" secondItem="gfO-OK-b3M" secondAttribute="bottom" id="wS1-XO-44Y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EgY-Wi-o5g" secondAttribute="trailing" id="07W-Kb-I0b"/>
+                            <constraint firstItem="EgY-Wi-o5g" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="3h0-ry-Xto"/>
+                            <constraint firstItem="EgY-Wi-o5g" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Lqi-bx-ITg"/>
+                            <constraint firstItem="EgY-Wi-o5g" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="PBM-SS-CSx"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="clockView" destination="EgY-Wi-o5g" id="mXf-0o-hFj"/>
+                        <outlet property="faceView" destination="gfO-OK-b3M" id="ubf-Ti-swd"/>
+                        <outlet property="handsView" destination="Oh3-iU-ik7" id="MZ9-jZ-dow"/>
+                        <outlet property="topView" destination="dPa-uU-lBp" id="ejF-bX-vew"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="460" y="462"/>
         </scene>
     </scenes>
 </document>
