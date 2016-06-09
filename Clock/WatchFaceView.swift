@@ -108,15 +108,15 @@ class WatchFaceView: UIView
         {
             if( pos % 15 == 0 )
             {
-                drawLine( context, from: tickStart, to: tick15End, width: Geometry.Tick15Width, color: Geometry.Tick15Color.CGColor )
+                drawLine( context!, from: tickStart, to: tick15End, width: Geometry.Tick15Width, color: Geometry.Tick15Color.CGColor )
             }
             else if( pos % 5 == 0 )
             {
-                drawLine( context, from: tickStart, to: tick05End, width: Geometry.Tick05Width, color: Geometry.Tick05Color.CGColor )
+                drawLine( context!, from: tickStart, to: tick05End, width: Geometry.Tick05Width, color: Geometry.Tick05Color.CGColor )
             }
             else
             {
-                drawLine( context, from: tickStart, to: tick01End, width: Geometry.Tick01Width, color: Geometry.Tick01Color.CGColor )
+                drawLine( context!, from: tickStart, to: tick01End, width: Geometry.Tick01Width, color: Geometry.Tick01Color.CGColor )
             }
             
             CGContextRotateCTM( context, CGFloat( 2 * M_PI / 60 ))

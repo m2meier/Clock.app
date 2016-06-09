@@ -80,7 +80,7 @@ class HandsView: UIView
         CGContextSaveGState( context )
         CGContextRotateCTM( context, CGFloat( 2 * M_PI * ( hour / 12 + minute / 720 )))
         
-        drawLine( context, from: 0, to: Geometry.HourHandLength, width: Geometry.HourHandWidth, color: Geometry.HourHandColor.CGColor )
+        drawLine( context!, from: 0, to: Geometry.HourHandLength, width: Geometry.HourHandWidth, color: Geometry.HourHandColor.CGColor )
         
         CGContextRestoreGState( context )
         
@@ -89,7 +89,7 @@ class HandsView: UIView
         CGContextSaveGState( context )
         CGContextRotateCTM( context, CGFloat( 2 * M_PI * ( minute / 60 + second / 3600 )))
         
-        drawLine( context, from: 0, to: Geometry.MinuteHandLength, width: Geometry.MinuteHandWidth, color: Geometry.MinuteHandColor.CGColor )
+        drawLine( context!, from: 0, to: Geometry.MinuteHandLength, width: Geometry.MinuteHandWidth, color: Geometry.MinuteHandColor.CGColor )
         
         CGContextRestoreGState( context )
         
@@ -98,7 +98,7 @@ class HandsView: UIView
         CGContextSaveGState( context )
         CGContextRotateCTM( context, CGFloat( 2 * M_PI * second / 60 ))
         
-        drawLine( context, from: 0, to: Geometry.SecondHandLength, width: Geometry.SecondHandWidth, color: Geometry.SecondHandColor.CGColor )
+        drawLine( context!, from: 0, to: Geometry.SecondHandLength, width: Geometry.SecondHandWidth, color: Geometry.SecondHandColor.CGColor )
         
         CGContextRestoreGState( context )
     }

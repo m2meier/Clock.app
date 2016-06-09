@@ -72,7 +72,7 @@ class ClockViewController: UIViewController, UIScrollViewDelegate, HandsViewData
     func updateTime()
     {
         let calendar = NSCalendar.currentCalendar()
-        time = calendar.components( .CalendarUnitHour | .CalendarUnitMinute | .CalendarUnitSecond, fromDate: NSDate() )
+        time = calendar.components( [.Hour, .Minute, .Second], fromDate: NSDate() )
         
         handsView.setNeedsDisplay()
     }
