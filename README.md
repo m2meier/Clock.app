@@ -1,6 +1,6 @@
 # Clock.app
 
-Shows the current time as analog clock. Nothing more. Nothing less.
+Shows an analog clock. No more and no less ;-)
 
 Feedback is much appreciated!
 
